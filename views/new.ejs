@@ -1,0 +1,22 @@
+<%- include("partials/header"); -%>
+<div class="container"  style="margin-top: 55px;
+border: 3px solid;
+border-style: groove;
+padding: 30px;">
+    <h1 class="font-italic mb-3">New Article</h1>
+    <div class="mb-3">
+        <form action="/article" method="POST">
+          <label for="exampleFormControlTextarea1" class="form-label h3">Title</label>
+            <input type="text" class="form-control" id="exampleFormControlInput1" name="title" placeholder="Title">
+        </div>
+        <div class="mb-3">
+          <label for="exampleFormControlTextarea1" class="form-label h3">Description</label>
+          <textarea class="font-control"  id="exampleFormControlTextarea1" name="description" rows="10" cols="143" placeholder="description" style="overflow:scroll;"></textarea>
+        </div>
+        <div>
+          <button type="submit" class="btn btn-large btn-primary">Publish</button>
+        </div>
+        </form>
+</div>
+
+<%- include("partials/footer"); -%>

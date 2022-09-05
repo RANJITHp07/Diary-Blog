@@ -1,0 +1,40 @@
+<%- include("partials/header"); -%>
+    <header>
+        <div class="header">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class=" heading" href="/">Daily Blog</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse font-italic" id="navbarNav">
+                  <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                      <a class="nav-link text-white h5 " href="/">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-white h5 ml-3 mr-3" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-white h5 mr-5" href="#"> Contact</a>
+                    </li>
+                    
+                  </ul>
+                </div>
+              </nav>
+              <a href="/article"><button class="btn btn-large btn-primary headbtn">New article</button></a>
+        </div>
+        
+    </header>
+       
+                <%article.forEach(function(result){%>
+                    <div class="content">
+                    <h1><%= result.title %></h1>
+                    <h5><%= date %></h5>
+                    <h4><%= result.description.slice(0,100) %>
+                        <br><a href="/article/<%=result._id %>">Read more</a>
+                    </h4>
+                </div>
+                <%})%>
+       
+   
+<%- include("partials/footer"); -%>
