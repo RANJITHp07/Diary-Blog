@@ -1,0 +1,41 @@
+body{
+    background-color: rgba(255, 255, 255, 0.997);
+}
+.header{
+    height: 20rem;
+    background-image: url("https://previews.123rf.com/images/maglara/maglara1506/maglara150601473/41213607-website-header-design-with-notebook-and-creative-vintage-objects-view-from-above.jpg");
+}
+.headbtn{
+    position: relative;
+    top: 8rem;
+    margin: 20px;
+}
+.heading{
+    font-size:70px;
+    font-family: "Audiowide", sans-serif;
+    color:aliceblue;
+    font-weight: 500;
+   
+}
+.heading:hover{
+    color:aliceblue;
+    text-decoration: none;
+}
+.content{
+    border: 1px solid;
+    border-style: groove;
+    margin: 30px;
+    padding: 20px;
+}
+header{
+    margin-bottom: 45px;
+}
+.new{
+    margin-top: 7rem;
+}
+.article{
+   margin-top: 55px;
+}
+.btn{
+    margin: 20px;
+}
